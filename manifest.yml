@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaCloudantApp.war
+  memory: 512M
+  instances: 4
+  domain: mybluemix.net
+  name: javacloudantwebstarter-mn-0217
+  host: javacloudantwebstarter-mn-0217
+  disk_quota: 1024M
+  services:
+  - Auto-Scaling-tj
+  - javacloudantwebstarter-mn-0217-cloudantNoSQLDB
+  - Monitoring and Analytics-tx
+  - Cloudant NoSQL DB-sf
